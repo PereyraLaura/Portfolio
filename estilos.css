@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* GENERAL */
+
+/* Header */
+#cabecera {
+    width: 100%;
+    height: 197px;
+    background-color: #9e3de3;
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+} 
+
+h1 {
+    color: #ffffff;
+    font-size: 100px;
+    font-family: "Yeseva One";
+    font-size: 6em;
+    font-weight: 400;
+}
+
+h2 {
+    color: #9E3DE3;
+    font-family: Amaranth;
+    font-size: 75px;
+    font-weight: 400;
+}
+
+p {
+    font-family: "PT Sans";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.circulo {
+    background-color: #ffffff;
+    width: 28px;
+    height: 27px;
+    border-radius: 60px;
+}
+/* Fin Header */
+
+/* Navegador */
+
+nav ul {
+    list-style: none;
+}
+
+.navegador {
+    width: 100%;
+    height: 91px;
+    background-color: #9e3de3;
+}
+
+.navegador ul {
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 10px 0px 30px 0px;
+}
+
+.navegador a {
+    width: 297px;
+    height: 71px;
+    padding: 6px 40px 8px 40px;
+    background-color: #E0B5FF;
+    border-radius: 33px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-size: 37px;
+    color: #9E3DE3;
+    text-align: center;
+    font-family: Amaranth;
+    font-size: 37px;
+    font-weight: 400;
+}
+
+.navegador a:hover {
+    color: #fff;
+    background-color: #BE81FB;
+    animation-name: hover;
+    animation-duration: 290ms;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+}
+
+@keyframes hover {
+    0% {
+        color: #9E3DE3;
+        background-color: #E0B5FF;
+    }
+
+    100% {
+        color: #fff;
+        background-color: #BE81FB;
+    }
+}
+
+.navegador a:active {
+    color: #fff;
+    background-color: #D6A0D7;
+    font-size: 36px;
+    box-shadow: none;
+    padding: 6px 42px 8px 41px;
+    
+} /* Tengo un problema acá con mi navegador, en active debo bajar la tipografia 1px para generar el efecto que quiero, pero debido al padding, al clickear, todos mis botones se mueven un pixel, itente arreglarlo subiendo un pixel el ancho del padding, pero no funciona totalmente
+
+/* Fin Navegador */
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 149px;
+    background-color: #9E3DE3;
+}
+
+/* Fin Footer */
+
+/*  FIN GENERAL */
+
+/* INDEX */
+main {
+    width: 100%;
+    background-color: #E8D7FC;
+}
+
+.bienvenidos {
+    width: 1600px;
+    height: 1725px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    padding: 45px 50px 50px 50px;
+    align-items: center;
+    gap: 34px;
+    border: 12px dotted #FFF;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.animacion {
+    width: 582px;
+    height: 91px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.ala1 {
+    width: 79px;
+    height: 73px;
+    transform: scaleX(-1);
+}
+
+/* 
+.ala1 {
+    width: 79px;
+    height: 73px;
+    transform: scaleX(-1);
+    background-image: url("img/imagenes-index/Ala-original.svg");
+    animation: ala1 5s alternate infinite ease-in-out;
+    
+   
+    }
+
+@keyframes ala1 {
+    0% {
+
+    }
+
+    50% {
+        background-image: url("img/imagenes-index/Ala-original.svg");
+        transform: rotate(20deg)
+    }
+    
+    } */ 
+/* No me sale esta animación. Preguntar en clase */
+
+.imagen-index {
+    border-radius: 25px;
+}
+
+.cita {
+    width: 1600px;
+    height: 114px;
+    color: #9E3DE3;
+    text-align: center;
+    font-family: "PT Sans";
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px 0px;
+    border-top: 3px solid #9E3DE3;
+    border-bottom: 3px solid #9E3DE3;
+}
+
+.cita p {
+    color: var(--Violeta-A, #9E3DE3);
+    font-family: "PT Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.parrafo-index {
+    width: 1498px;
+    height: 166px;
+}
+
+/* FIN INDEX */
