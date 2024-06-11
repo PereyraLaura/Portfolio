@@ -114,14 +114,11 @@ nav ul {
 }
 
 .navegador a:active {
-    color: #fff;
+    color: #ffffff;
     background-color: #D6A0D7;
-    font-size: 36px;
+    font-size: 37px;
     box-shadow: none;
-    padding: 6px 42px 8px 41px;
-    
-} /* Tengo un problema acá con mi navegador, en active debo bajar la tipografia 1px para generar el efecto que quiero, pero debido al padding, al clickear, todos mis botones se mueven un pixel, itente arreglarlo subiendo un pixel el ancho del padding, pero no funciona totalmente
-
+}
 /* Fin Navegador */
 
 /* Footer */
@@ -130,7 +127,18 @@ nav ul {
     width: 100%;
     height: 149px;
     background-color: #9E3DE3;
+    display: flex;
+    padding: 41px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0px auto;
 }
+
+.footer a:hover {
+    opacity: 75%;
+}
+
 
 /* Fin Footer */
 
@@ -144,7 +152,7 @@ main {
 
 .bienvenidos {
     width: 1600px;
-    height: 1725px;
+    height: 1789px;
     display: flex;
     flex-direction: column;
     margin: 0px auto;
@@ -165,35 +173,72 @@ main {
     gap: 20px;
 }
 
-.ala1 {
-    width: 79px;
-    height: 73px;
-    transform: scaleX(-1);
-}
 
-/* 
+
 .ala1 {
     width: 79px;
     height: 73px;
-    transform: scaleX(-1);
-    background-image: url("img/imagenes-index/Ala-original.svg");
-    animation: ala1 5s alternate infinite ease-in-out;
-    
-   
+    justify-content: center;
+    background-image: url("img/imagenes-index/ala1.svg");
+    animation: ala1 1.7s linear 15ms infinite alternate none;
+    transform: rotate(5deg);
     }
 
 @keyframes ala1 {
     0% {
-
+        background-image: url("img/imagenes-index/ala1.svg");
+        transform: rotate(-19deg);
     }
 
     50% {
-        background-image: url("img/imagenes-index/Ala-original.svg");
-        transform: rotate(20deg)
+        background-image: url("img/imagenes-index/ala1.svg");
+        transform: rotate(0deg)
     }
     
-    } */ 
-/* No me sale esta animación. Preguntar en clase */
+    100% {
+        background-image: url("img/imagenes-index/ala1.svg");
+        transform: rotate(-20deg)
+    }
+    } 
+
+    .ala2 {
+        width: 79px;
+        height: 73px;
+        justify-content: center;
+        background-image: url("img/imagenes-index/ala2.svg");
+        animation: ala2 1.7s linear 15ms infinite alternate none;
+        transform: rotate(-5deg);
+        }
+    
+    @keyframes ala2 {
+        0% {
+            background-image: url("img/imagenes-index/ala2.svg");
+            transform: rotate(19deg);
+        }
+    
+        50% {
+            background-image: url("img/imagenes-index/ala2.svg");
+            transform: rotate(0deg)
+        }
+        
+        100% {
+            background-image: url("img/imagenes-index/ala2.svg");
+            transform: rotate(20deg)
+        }
+    } 
+
+    .texto-bienvenida {
+        animation: bienvenidos 1s cubic-bezier(0.5, 0, 0.5, 1) both;
+        animation-delay: 60ms;
+    }
+
+   
+@keyframes bienvenidos {
+    from {
+        transform: translateY(-1em) scale(0.5);
+        opacity: 0;
+    }
+}
 
 .imagen-index {
     border-radius: 25px;
@@ -223,7 +268,7 @@ main {
 }
 
 .parrafo-index {
-    width: 1498px;
+   max-width: 850px;
     height: 166px;
 }
 
