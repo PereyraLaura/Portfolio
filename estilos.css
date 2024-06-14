@@ -524,7 +524,7 @@ textarea {
 
 /* MEDIA 
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
     #cabecera {
     display: flex;
     width: 475px;
@@ -622,5 +622,5 @@ textarea {
     }
 } */
 
-/* Tuve un problema con la media query, y es que no encontraba la forma de que mi ordenador mostrara los cabios que hacía, comenzo a verse cuando cambie el valor a min-widht, pero lo oculte porque luego la opción de escritorio ya no se visualizaba */
+/* Tuve un problema con la media query, y es que no encontraba la forma de que mi ordenador mostrara los cabios que hacía, por un monento se pudo ver, pero lo oculte porque luego la opción de escritorio ya no se visualizaba */
  
