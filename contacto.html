@@ -35,27 +35,31 @@
         </nav>
 
         <main>
-            <section class="bienvenidos">
-                <div class="animacion">
-                    <article class="ala1">
-                        <!--<img src="img/imagenes-index/Ala-original.svg" width="79" height="73" alt="icono ala">-->
+            <div class="contenido-form">
+                <section class="seccion1">
+                    <article class="texto">
+                        <h3>¡Trabajemos juntos!</h3>
+                        <p>Enviame tus dudas, y tus consultas,  rellena este formulario y me pondré en contacto tan pronto como sea posible. Las palabras de apoyo, si te gusta mi trabajo, tambien son bienvenidas</p>
                     </article>
-                    <article class="texto-bienvenida">
-                        <h2>Bienvenidos</h2>
-                    </article>
-                    <article class="ala2">
-                        <!--<img src="img/imagenes-index/Ala-original.svg" width="79" height="73" alt="icono ala">-->
-                    </article>
-                </div>
-                <img class="imagen-index" src="img/imagenes-index/flower_by_Pereyra.png" width="1489" height="1212" alt="Ilustracion que realice de una linda chica en un bosque">
-                <blockquote class="cita">
-                    "La creatividad es la inteligencia divirtiendose" 
-                    <p>-Albert Einstein</p>
-                </blockquote>
-                <div class="parrafo-index">
-                    <p>¡Hola! mí nombre es Laura Pereyra, y les doy la bienvenida a este espacio que es mí portfolio, mi intención es demostrar aquí una representación de todo lo que he aprendido y logrado, en las áreas de Diseño Gráfico e Ilustración. Tanto en base a mí formación académica, como en mi aprendizaje autodidacta. Espero que el material visto pueda ser de su agrado.</p>
-                </div>
-            </section>
+                    <img src="img/contacto/imagen-formulario.svg" width="710" height="750" alt="bunn bunn pequequeño alterego que cree para este formulario, una coneja con alas">
+                </section>
+                <section class="seccion2">
+                    <div class="caja-form">
+                        <form class="formulario" method="post" action="mailto:laura_pereyra_91@hotmail.com?subject='email enviado desde formulario de Portfolio'" target="_blank" enctype="text/plain">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="¿Cómo te llamas?" required>
+
+                            <label for="e-mail">E-mail</label>
+                            <input type="email" name="e-mail" id="e-mail" maxlength="30" placeholder="Tu correo electrónico" required>
+
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje acá, por favor"></textarea>
+                            <article><input class="enviar" type="submit"></article>
+                        </form>
+                        <img class="iconomensaje" src="img/contacto/iconomensajeria.svg" width="264" height="168" alt="imagen de sobre de correo">
+                    </div>
+                </section>
+            </div>
         </main>
 
         <footer class="footer">
