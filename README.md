@@ -8,4 +8,4 @@ El Portfolio contiene una galeria con varias muestras de mi trabajo, tanto ilust
 
 El programa de edición de código empleado para este trabajo fue Visual Studio Code. La medida de pantalla de la computadora de mi hogar, en la que se trabajo fue de 1920 x 1980
 
-Link a Figma: https://github.com/PereyraLaura/Portfolio](https://www.figma.com/design/tR6itFZksTEIiPrFXOP8ln/Pereyra-Laura%3A-Portfolio?node-id=0-1&t=TXkd2iHoWwXXHK4A-0
+Link a Figma: https://www.figma.com/design/tR6itFZksTEIiPrFXOP8ln/Pereyra-Laura%3A-Portfolio?node-id=0-1&t=TXkd2iHoWwXXHK4A-0
